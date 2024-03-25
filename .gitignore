@@ -1,0 +1,16 @@
+# WebDriverIO specific
+/.wio
+/.cache
+/allure-results
+/.tmp
+/logs
+/output
+
+# Node.js specific
+/node_modules
+node_modules
+npm-debug.log
+
+# IDE specific
+.vscode
+.idea
