@@ -10,6 +10,15 @@
     "@faker-js/faker": "^8.4.1"
   },
   "scripts": {
-    "test": "wdio run ./wdio.conf.js"
+    "test": "wdio run ./wdio.conf.js",
+    "test:1": "wdio wdio.conf.js --mochaOpts.grep @one",
+    "test:2": "wdio wdio.conf.js --mochaOpts.grep @two",
+    "test:3": "wdio wdio.conf.js --mochaOpts.grep @three",
+    "test:4": "wdio wdio.conf.js --mochaOpts.grep @four",
+    "test:5": "wdio wdio.conf.js --mochaOpts.grep @five",
+    "test:6": "wdio wdio.conf.js --mochaOpts.grep @six",
+    "test:7": "wdio wdio.conf.js --mochaOpts.grep @seven",
+    "test:8": "wdio wdio.conf.js --mochaOpts.grep @eight",
+    "test:9": "wdio wdio.conf.js --mochaOpts.grep @nine"
   }
 }
