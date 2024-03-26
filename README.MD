@@ -1,4 +1,5 @@
 
+
 # Recruitment Task Repository
 
 ## Description
@@ -14,9 +15,18 @@ To install the repository, run the following command:
     
 ## Running Tests
 
-To run the tests, use the following command:
+To run the all tests, use the following command:
 
 	npm run test
+
+To run specific scenario:
+
+	npm run test:<scenario number>
+	for example: npm run test:1
+
+To run in headless mode combine WDIO_HEADLESS environment variable with aforementioned commands:
+
+	WDIO_HEADLESS=TRUE npm run test:1
 	
 ## Project structure
 * test
