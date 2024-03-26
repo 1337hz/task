@@ -10,6 +10,10 @@ const puppyDetailsPage = new PuppyDetailsPage();
 const cartPage = new CartPage();
 const orderPage = new OrderPage();
 
+
+// Note: The code would be organized better if tests were more focused around specific features.
+// It would have enabled usage of setup by api-calls and usage of tests hooks like before/beforeEach
+
 describe('Puppy Adoption Scenarios', () => {
   it('1. View details for the puppy Hanna, return to the puppy list', async () => {
     await homePage.visit();

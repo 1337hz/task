@@ -30,8 +30,9 @@ To run the tests, use the following command:
 Please note that this project is not a full end-to-end test automation project, and some omissions have been made.
 
 - **Assertions**: Only basic assertion tests are provided.
-- **Multi-browser Support**: Multi-browser support is omitted.
-- **Configuration for Multiple Environments**: Configuration for multiple environments is not included in this project.
-- **Setup via API Calls**: The setup via API calls is not present in this project.
+- **Multi-browser Support**: Testing on multiple browser is crucial.
+- **Setup via API Calls**: The setup via API calls would greatly speed up test execution.
+- **Configuration for Multiple Environments**
+- **Linter and Formatter**
 
 
