@@ -54,10 +54,8 @@ export default class CartPage {
       await checkboxes[product].click();
     }
   }
-
-
-
 }
+
 const productMap = Object.freeze({
   'collar': '#collar',
   'toy': '#toy',

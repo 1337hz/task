@@ -1,5 +1,4 @@
 export default class HomePage {
-
   async visit(page = 1) {
     await browser.url(`agency?page=${page}`);
     await this.intro.waitForDisplayed({ timeout: 3000 });
