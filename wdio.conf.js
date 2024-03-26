@@ -1,6 +1,7 @@
+const headless = process.env.WDIO_HEADLESS && process.env.WDIO_HEADLESS.toUpperCase() === 'TRUE';
+
 export const config = {
   runner: 'local',
-
   specs: [
     './test/specs/**/*.spec.js'
   ],
@@ -10,7 +11,7 @@ export const config = {
     'goog:chromeOptions': {
       // Add Chrome options here
       args: [
-        // Example arguments:
+        ...(headless ? ['--headless'] : []), // Include '--headless' option if headless is true
         '--start-maximized', // Start Chrome maximized
         '--disable-gpu', // Disable GPU hardware acceleration
         '--disable-dev-shm-usage', // Disable the use of /dev/shm
@@ -29,8 +30,5 @@ export const config = {
   mochaOpts: {
     ui: 'bdd',
     timeout: 60000
-  },
-  after: async function (capabilities, specs) {
-    await browser.closeWindow();
   }
 }
