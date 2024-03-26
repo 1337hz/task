@@ -19,11 +19,10 @@ To run the tests, use the following command:
 	npm run test
 	
 ## Project structure
-.
-├── test
-│   ├── pom             # **Page Object Models**
-│   ├── specs           # **Test Specifications**
-│   └── utils             # **Utility Functions and Constants**
+* test
+	* pom             # **Page Object Models**
+	* specs           # **Test Specifications**
+	* utils             # **Utility Functions and Constants**
 
 
 ### Omissions
